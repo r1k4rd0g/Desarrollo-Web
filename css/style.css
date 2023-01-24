@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.fondo_logo{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(177,112,119,1) 22%,
+    rgba(150,63,72,1) 39%, rgba(134,34,44,1) 49%, rgba(121,9,21,0.87718837535014) 55%, 
+    rgba(108,9,20,1) 62%, rgba(97,9,19,1) 71%, rgba(11,9,10,1) 100%);
+
+}
+.img-logo{
+    margin: auto;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    font-size: 25px;
+    list-style: none;
+}
+.flex-container{
+    border-color: #A4161A;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+li{
+    /*1rem =  16px */
+    margin: 1rem;
+    border: 2px solid black;
+    
+}
+.main{
+    background-color: #D3D3D3;
+}
+.main__titulo{
+    display: flex;
+    justify-content: center;
+    color: #A4161A;
+    font-size: 100px;
+}
+.main__Clases{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__Clases li{
+    color: #ad2424;
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main__salsa {
+    border: 2px black;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-image: url(../recursos/salsa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main__bachata {
+    border: 2px black;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-image: url(../recursos/Bachata.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main__ritmos {
+    border: 2px black;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-image: url(../recursos/ritmos.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.footer{
+    background-color: #D3D3D3;
+    display: flex
+}
+.footer__Redes li{
+    color: #370617; 
+    border: 3px solid;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    list-style: none;
+    font-size: 25px;
+}
+.footer__Redes a{
+    color: #9D0208;
+    text-decoration:  none;
+}
+.main__formulario{
+padding: 3rem;
+}
+.main__datos{
+    padding: 3rem;
+}
+.main__datos input{
+    background-color:#F5EBE0;
+}
+.main__datos textarea{
+    background-color:#F5EBE0;
+}
