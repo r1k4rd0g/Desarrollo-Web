@@ -1,7 +1,22 @@
+/*colores a usar:
+#0B090A ~ Rich Black FOGRA 39
+#161A1D ~ Eerie Black
+#660708 ~ Blood Red
+#A4161A ~ Ruby Red
+#BA181B ~ Carnelian
+#E5383B ~ Imperial Red
+#B1A7A6 ~ Black Shadows
+#D3D3D3 ~ Light Gray
+#F5F3F4 ~ Cultured
+#FFFFFF ~ White
+*/
+/* fuente a utilizar 'Source Serif Pro', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
+    font-family: 'Source Serif Pro', serif;
 }
 .fondo_logo{
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(177,112,119,1) 22%,
