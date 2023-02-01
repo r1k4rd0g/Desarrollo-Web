@@ -9,22 +9,25 @@
 </head>
 <body>
     <!-- encabezado -->
-    <header class="header">        
+    <header class="header">            
         <!-- navegación etiqueta nav -->
-        <nav>
-        <!-- lista no ordenada -->
-            <ul class="flex-container">
-                <li><a href="Clases.html">Clases</a></li>
-                <li><a href="Galeria.html" class="header__listaMenu--activo">Galeria</a></li>                    
-                <li><a href="Contacto.html">Contacto</a></li>
-                <li><a href="Preguntas-frecuentes.html">FAQ</a></li>
-                <li><a href="Profesores.html">Profesores</a></li>
-            </ul>
+        <nav class="navegador">
+            <div class="menu">
+                <ul class="lista-menu">
+                    <li style="--clr:#E09F3E" class="menu"><a href="Clases.html" data-text=" Clases"> Clases</a></li>
+                    <li style="--clr:#E09F3E" class="menu"><a href="Contacto.html"data-text=" Contacto"> Contacto</a></li>
+                    <li style="--clr:#E09F3E" class="menu"><a href="Galeria.html"data-text=" Galeria"> Galeria</a></li>
+                    <li style="--clr:#E09F3E" class="menu"><a href="Staff.html"data-text=" Staff"> Staff</a></li>
+                    <li style="--clr:#E09F3E" class="menu"><a href="Preguntas-frecuentes.html"data-text=" FAQ"> FAQ</a></li>
+                </ul>
+            </div>        
         </nav>
-        <!-- logo siempre aufera de nav -->
-        <a href="../index.html">
+        <div class="fondo_logo">  
+            <a href="../index.html">
             <img src="../recursos/Yousinfondo.png" alt="logo de academia you" class="img-logo">
             </a>
+        </div>
+        <!-- logo siempre afuera de nav -->  
     </header>
     <!-- contenido principal -->
     <main>
