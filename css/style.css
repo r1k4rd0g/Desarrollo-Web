@@ -16,6 +16,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Source Serif Pro', serif;
 }
 .body{
@@ -38,27 +39,46 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
     flex-wrap: wrap;
     justify-content: space-around;
     color: #B1A7A6;
-}
-li{
-    /*1rem =  16px */
-    font-size: 50px;
-    list-style-type: none;
+    background: #252839;
+    list-style: none;
+    font-size: 20px;
     text-align: center;
+    position: relative;
+    flex-direction: row;
+    gap: 30px;
 }
-a{
-    color: #B1A7A6;
+.lista-menu li a{
+    position: relative;
+    font-size: 2rem;
     text-decoration: none;
+    line-height: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255 ,0.5);
+    /*color: #B1A7A6;*/
 }
-.botonmenu{
-    border: 1px solid #B1A7A6 ;
-    border-spacing: 2px;
-    border-radius: 100px;
-    border-style: double;
-    border-width: 2px;
+.lista-menu li a::before{
+    content: attr( data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 2px solid var(--clr);
+    -webkit-text-stroke: 2px var(--clr);
 }
+.lista-menu li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+/*.botonmenu{
+    
+
+}*/
 .img-logo{
     margin: auto;
-    width: 800px;
+    width: 400px;
     display: flex;
     justify-content: center;
 }
@@ -70,15 +90,15 @@ a{
     display: flex;
     justify-content: center;
     color: #E5383B;
-    font-size: 100px;
+    font-size: 50px;
     background-color: #D3D3D3;
 }
 .main__ritmos {
     border: 2px black;
     display: flex;
     justify-content: center;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
     background-image: url(../recursos/ritmos.png);
     background-size: 100%;
     background-repeat: no-repeat;
