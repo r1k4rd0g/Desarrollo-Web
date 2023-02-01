@@ -7,42 +7,51 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>YouDance La Costa</title>
 </head>
-<body>
+<body class="body">
     <!-- Encabezado -->
     <header class="header">            
         <!-- navegación etiqueta nav -->
-        <nav>
+        <nav class="navegador">
             <div class="menu">
-            <ul class="flex-container">
-                <li><a href="./Secciones/Clases.html">Clases</a></li>
-                <li><a href="./Secciones/Galeria.html">Galeria</a></li>
-                <li><a href="./Secciones/Contacto.html">Contacto</a></li>
-                <li><a href="./Secciones/Preguntas-frecuentes.html">FAQ</a></li>
-                <li><a href="./Secciones/Profesores.html">Profesores</a></li>
+            <ul class="lista-menu">
+                <li class="menu"><a class="botonmenu" href="./Secciones/Clases.html">Clases</a></li>
+                <li class="menu"><a class="botonmenu" href="./Secciones/Galeria.html">Galeria</a></li>
+                <li class="menu"><a class="botonmenu" href="./Secciones/Contacto.html">Contacto</a></li>
+                <li class="menu"><a class="botonmenu" href="./Secciones/Profesores.html">Profesores</a></li>
+                <li class="menu"><a class="botonmenu" href="./Secciones/Preguntas-frecuentes.html">FAQ</a></li>
             </ul>
             </div>
         </nav>
-        <!-- logo siempre afuera de nav -->  
         <div class="fondo_logo">  
             <a href="./index.html">
             <img src="./recursos/Yousinfondo.png" alt="logo de academia you" class="img-logo">
             </a>
         </div>
+        <!-- logo siempre afuera de nav -->  
     </header>
     <!-- contenido principal -->
     <main class="main">
-        <nav>
-            <h1 class="main__titulo">Clases</h1>
-            <ul class="main__Clases">
-                <li class="main__salsa">Salsa</li>                
-                <li class="main__bachata">Bachata</li>
-                <li class="main__ritmos">Ritmos</li>
-            </ul>
-        </nav>
+        <section class="Clases">
+            <h1 class="Clases-Principales">Clases Principales</h1>
+            <section class="ritmos">
+                <div class="Salsa">
+                    <h2 class="tit-Salsa">Salsa</h2>
+                    <img src="./recursos/salsa.png" alt="Salsa-img" class="img-baile">
+                </div>                
+                <div class="Bachata">
+                    <h2 class="tit-Bachata">Bachata</h2>
+                    <img src="./recursos/Bachata2.png" alt="Bachata-img" class="img-baile">
+                </div>
+                <div class="Reggaeton">
+                    <h2 class="tit-Reggaeton">Reggaeton</h2>
+                    <img src="./recursos/R.png" alt="Reggaeton-img" class="img-baile">
+                </div>
+            </section>
+        </section>
     </main>
     <!-- pie de pagina -->
     <footer class="footer">
-        <H3>Redess</H3>
+        <H3>Redes</H3>
         <ul class="footer__Redes">
             <li><a href="https://www.instagram.com/youdancelacosta/?hl=es" target="_blank">Instagram</a>            
             </li>

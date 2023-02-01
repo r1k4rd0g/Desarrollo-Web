@@ -18,76 +18,60 @@
     padding: 0;
     font-family: 'Source Serif Pro', serif;
 }
-.fondo_logo{
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(177,112,119,1) 22%,
-    rgba(150,63,72,1) 39%, rgba(134,34,44,1) 49%, rgba(121,9,21,0.87718837535014) 55%, 
-    rgba(108,9,20,1) 62%, rgba(97,9,19,1) 71%, rgba(11,9,10,1) 100%);
-
+.body{
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 20%, rgba(211,211,211,1) 30%, rgba(177,167,166,1) 40%, rgba(229,56,59,1) 50%, rgba(186,24,27,1) 60%, rgba(164,22,26,1) 70%, rgba(102,7,8,1) 80%, rgba(13,12,13,1) 90%, rgba(11,9,10,1) 100%);
+/*lo de arriba le da un color de fondo a toda la web*/
 }
-.img-logo{
+/*modificaciones en header*/
+/*.img-logo{
     margin: auto;
     width: 350px;
     display: flex;
     justify-content: center;
-}
-ul{
-    font-size: 25px;
-    list-style: none;
-}
-.flex-container{
-    border-color: #A4161A;
+}*/
+.lista-menu{
     display: flex;
     justify-content: center;
     padding: 1rem;
+    margin: 1rem;
     flex-wrap: wrap;
+    justify-content: space-around;
+    color: #B1A7A6;
 }
 li{
     /*1rem =  16px */
-    margin: 1rem;
-    border: 2px solid black;
-    
+    font-size: 50px;
+    list-style-type: none;
+    text-align: center;
 }
+a{
+    color: #B1A7A6;
+    text-decoration: none;
+}
+.botonmenu{
+    border: 1px solid #B1A7A6 ;
+    border-spacing: 2px;
+    border-radius: 100px;
+    border-style: double;
+    border-width: 2px;
+}
+.img-logo{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+/*contenido principal con mobile last*/
 .main{
-    background-color: #D3D3D3;
+    background-color: #B1A7A6;
 }
-.main__titulo{
+.Clases-Principales{
     display: flex;
     justify-content: center;
-    color: #A4161A;
+    color: #E5383B;
     font-size: 100px;
-}
-.main__Clases{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.main__Clases li{
-    color: #ad2424;
-    list-style: none;
-    display:flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.main__salsa {
-    border: 2px black;
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 200px;
-    background-image: url(../recursos/salsa.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.main__bachata {
-    border: 2px black;
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 200px;
-    background-image: url(../recursos/Bachata.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: #D3D3D3;
 }
 .main__ritmos {
     border: 2px black;
@@ -99,8 +83,38 @@ li{
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.ritmos { 
+    display: grid;
+    grid-template-columns: repeat(3,  33.33%);
+    /*grid-template-rows: 1fr;*/
+    /*gap: 0px 0px;*/
+    /*grid-auto-flow: row;*/
+    grid-template-areas:
+        "Salsa Bachata Reggaeton";   
+}
+.img-baile{
+    border-radius: 15%;
+    width: 30vw;
+}
+/*.Salsa {
+    grid-area: Salsa;
+    background-size: cover;
+    width: 25vw;
+    height: 30vh;
+
+}
+.Bachata { 
+    grid-area: Bachata;     
+    background-size: cover;
+    width: 25vw;
+    height: 30vh;
+}
+
+.Reggaeton { grid-area: Reggaeton; }*/
+
 .footer{
-    background-color: #D3D3D3;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(177,167,166,1) 40%, rgba(211,211,211,1) 60%, rgba(245,243,244,1) 80%, rgba(229,56,59,1) 100%);
     display: flex
 }
 .footer__Redes li{
