@@ -25,12 +25,6 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
 /*lo de arriba le da un color de fondo a toda la web*/
 }
 /*modificaciones en header*/
-/*.img-logo{
-    margin: auto;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-}*/
 .lista-menu{
     display: flex;
     justify-content: center;
@@ -72,16 +66,14 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
     width: 100%;
     filter: drop-shadow(0 0 25px var(--clr));
 }
-/*.botonmenu{
-    
-
-}*/
 .img-logo{
     margin: auto;
     width: 300px;
     display: flex;
     justify-content: center;
 }
+/*animaciones para el logo*/
+
 /*contenido principal con mobile last*/
 .main{
     background-color: #B1A7A6;
