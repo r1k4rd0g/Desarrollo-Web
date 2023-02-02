@@ -21,10 +21,19 @@
 }
 .body{
     background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 20%, rgba(211,211,211,1) 30%, rgba(177,167,166,1) 40%, rgba(229,56,59,1) 50%, rgba(186,24,27,1) 60%, rgba(164,22,26,1) 70%, rgba(102,7,8,1) 80%, rgba(13,12,13,1) 90%, rgba(11,9,10,1) 100%);
+    background: linear-gradient(35deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 20%, 
+        rgba(211,211,211,1) 30%, rgba(177,167,166,1) 40%, rgba(229,56,59,1) 50%,
+        rgba(186,24,27,1) 60%, rgba(164,22,26,1) 70%, rgba(102,7,8,1) 80%, 
+        rgba(13,12,13,1) 90%, rgba(11,9,10,1) 100%);
 /*lo de arriba le da un color de fondo a toda la web*/
 }
+.header{
+    height: 25vh;
+}
 /*modificaciones en header*/
+.navegador{
+    height: 3vh;
+}
 .lista-menu{
     display: flex;
     justify-content: center;
@@ -40,6 +49,8 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
     position: relative;
     flex-direction: row;
     gap: 30px;
+    height: 5vh;
+    align-content: center;
 }
 .lista-menu li a{
     position: relative;
@@ -68,22 +79,24 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
 }
 .img-logo{
     margin: auto;
-    width: 300px;
+    width: 25vh;
     display: flex;
     justify-content: center;
 }
-/*animaciones para el logo*/
 
 /*contenido principal con mobile last*/
 .main{
     background-color: #B1A7A6;
+    height: 60vh;
 }
 .Clases-Principales{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #E5383B;
-    font-size: 4rem;
+    font-size: 150px;
     background-color: #D3D3D3;
+    height: 15vh;
 }
 .main__ritmos {
     border: 2px black;
@@ -91,13 +104,15 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
     justify-content: center;
     width: 300px;
     height: 100px;
-    background-image: url(../recursos/ritmos.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .ritmos { 
     display: grid;
     grid-template-columns: repeat(3,  33.33%);
+    justify-items: center;
+    align-content: center;
+    height: 40vh;
     /*grid-template-rows: 1fr;*/
     /*gap: 0px 0px;*/
     /*grid-auto-flow: row;*/
@@ -113,26 +128,12 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(245,243,244,1) 2
     text-align: center;
     color: #335C67;
 }
-/*.Salsa {
-    grid-area: Salsa;
-    background-size: cover;
-    width: 25vw;
-    height: 30vh;
-
-}
-.Bachata { 
-    grid-area: Bachata;     
-    background-size: cover;
-    width: 25vw;
-    height: 30vh;
-}
-
-.Reggaeton { grid-area: Reggaeton; }*/
-
 .footer{
     background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(177,167,166,1) 40%, rgba(211,211,211,1) 60%, rgba(245,243,244,1) 80%, rgba(229,56,59,1) 100%);
-    display: flex
+    background: linear-gradient(35deg, rgba(255,255,255,1) 20%, rgba(177,167,166,1) 40%, 
+            rgba(211,211,211,1) 60%, rgba(245,243,244,1) 80%, rgba(229,56,59,1) 100%);
+    display: flex;
+    height: 15vh;
 }
 .footer__Redes li{
     color: #370617; 
@@ -158,4 +159,47 @@ padding: 3rem;
 }
 .main__datos textarea{
     background-color:#F5EBE0;
+}
+/*modificaciones en seccion Staff*/
+.Staff{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    grid-template-areas:
+        "Directora Profe1";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 100vw;
+}
+.Staff .Directora{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 3rem
+}
+.Staff .Directora:hover .Cyn{
+    transform: translate(-1.5rem, 1.5rem);
+}
+.Staff .Directora:hover .texto-foto{
+    transform: translate(3.5rem, 3.5rem);
+}
+.Cyn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+.texto-foto{
+    background-color:#F5F3F4 ;
+}
+.img-staff{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
