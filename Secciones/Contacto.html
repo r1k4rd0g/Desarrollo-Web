@@ -32,29 +32,38 @@
     </header>
     <!-- contenido principal -->
 
-    <main class="main">
-        <h1 class="main__formulario">FORMULARIO</h1>
-        <!--la etiqueta h1 solo puede ir una sola vez por formulario-->
-        <form action="#" method="get">
-        <!-- action podria ser igual a un # para que se vea a donde viaja la informacion, como en youtube, lo mismo si usamos el metodo get-->
-        <div class="main__datos">
-            <input type="text" placeholder="Nombre Completo" name="NOMBRE">
-            <br><br>
-            <input type="number" placeholder="edad" name="EDAD">
-            <br><br>
-            <input type="ritmo" placeholder="tipo de baile">
-            <br><br>
-            <textarea name="" id="" cols="30" rows="10">Quiero mas información sobre...</textarea>
-            <br><br>
-        <!--usamos br para dar espacio entre los campos-->
-            <input type="email" placeholder="Ingrese su email">
-    <!-- Button-->
-        <br><br>
-        <label>
-            <input type="button" value="enviar" name="Radio">
-        </label>    
-    </main>
+    <main class="main-contacto">
+        <div class="grid-contacto">
+            <section class="formulario">
+                <h1 class="main__formulario">FORMULARIO</h1>
+                <!--la etiqueta h1 solo puede ir una sola vez por formulario-->
+                <form action="#" method="get">
+                <!-- action podria ser igual a un # para que se vea a donde viaja la informacion, como en youtube, lo mismo si usamos el metodo get-->
+                <div class="main__datos">
+                    <input type="text" placeholder="Nombre Completo" name="NOMBRE">
+                    <br><br>
+                    <input type="number" placeholder="edad" name="EDAD">
+                    <br><br>
+                    <input type="ritmo" placeholder="tipo de baile">
+                    <br><br>
+                    <textarea name="" id="" cols="30" rows="10">Quiero mas información sobre...</textarea>
+                    <br><br>
+                    <!--usamos br para dar espacio entre los campos-->
+                    <input type="email" placeholder="Ingrese su email">
+                    <!-- Button-->
+                    <label>
+                        <input type="button" value="enviar" name="Radio">
+                    </label>    
+                </div>
+            </section>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.4744228336663!2d-55.97814367363707!3d-34.83234195507596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23c2d6b85daac69c!2sYou%20Dance!5e0!3m2!1ses-419!2suy!4v1675360321126!5m2!1ses-419!2suy" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
+    </main>
     <!-- pie de pagina -->
     <footer class="footer">
         <H3>Redes</H3>
@@ -66,4 +75,8 @@
         </ul>
     </footer>
 </body>
+<script src="./js/wow.js"></script>
+    <script>
+        new wow().init();
+    </script>
 </html>

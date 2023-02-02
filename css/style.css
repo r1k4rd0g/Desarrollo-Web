@@ -94,7 +94,7 @@
     justify-content: center;
     align-items: center;
     color: #E5383B;
-    font-size: 150px;
+    font-size: 9rem;
     background-color: #D3D3D3;
     height: 15vh;
 }
@@ -160,46 +160,47 @@ padding: 3rem;
 .main__datos textarea{
     background-color:#F5EBE0;
 }
-/*modificaciones en seccion Staff*/
-.Staff{
-    position: relative;
+/*cambios en sección Contacto*/
+.grid-contacto{
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "formulario mapa";
     justify-items: center;
-    grid-template-areas:
-        "Directora Profe1";
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    height: 40vh;
+    gap: 8rem;
+
+}
+.main-contacto{
+    background-color: #B1A7A6;
+    height: 60vh;
     width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-.Staff .Directora{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 3rem
+.mapa{
+    animation-name: aparicio;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+
 }
-.Staff .Directora:hover .Cyn{
-    transform: translate(-1.5rem, 1.5rem);
-}
-.Staff .Directora:hover .texto-foto{
-    transform: translate(3.5rem, 3.5rem);
-}
-.Cyn{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: all 0.5s ease-in-out;
-}
-.texto-foto{
-    background-color:#F5F3F4 ;
-}
-.img-staff{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
+
+@keyframes aparicio{
+    10%{transform: translatex(100);
+    
+    }
+    25%{transform: translatex(80px);
+    
+    }
+    50%{transform: translatex(50px);
+    
+    }
+    80%{transform: translatex(25px);
+    
+    }
+    100%{transform: translatex(0px);
+    
+    }
 }
