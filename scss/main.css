@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*RECURSOS*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
-* { /*Reseteo*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,8 @@
         Bold 700
         Regular 400
         Black 900 Italic
-        font-family: 'Source Serif Pro', serif;*/ /*SECCIONES*/
+        font-family: 'Source Serif Pro', serif;*/
+/*SECCIONES*/
 .body {
   background: rgb(255, 255, 255);
   background: linear-gradient(35deg, rgb(255, 255, 255) 10%, rgb(245, 243, 244) 20%, rgb(211, 211, 211) 30%, rgb(177, 167, 166) 40%, rgb(229, 56, 59) 50%, rgb(186, 24, 27) 60%, rgb(164, 22, 26) 70%, rgb(102, 7, 8) 80%, rgb(13, 12, 13) 90%, rgb(11, 9, 10) 100%);
@@ -64,7 +65,6 @@
 .lista-menu li a {
   position: relative;
   font-size: 2rem;
-  font-family: "Source Serif Pro", serif;
   text-decoration: none;
   line-height: 2rem;
   letter-spacing: 3px;
@@ -110,20 +110,10 @@
   justify-content: center;
   align-items: center;
   color: #E5383B;
-  font-family: "Source Serif Pro", serif;
   font-size: 6rem;
+  font-weight: bold;
   background-color: #D3D3D3;
   min-height: 15vh;
-}
-
-.main__ritmos {
-  border: 2px black;
-  /*display: flex;*/
-  justify-content: center;
-  width: 300px;
-  height: 100px;
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .ritmos {
@@ -132,6 +122,12 @@
   justify-items: center;
   align-content: center;
   min-height: 40vh;
+  border: 2px black;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   /*width: 100%;*/
   /*grid-template-rows: 1fr;*/
   /*gap: 1rem;*/

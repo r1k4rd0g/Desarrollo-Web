@@ -1,16 +1,17 @@
 
 /*RECURSOS*/
-@import './Recursos/reseteo';
-@import './Recursos/colores';
-@import './Recursos/tipografia';
+@import './Resources/reseteo';
+@import './Resources/colores';
+@import './Resources/typo';
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap');
 
 /*SECCIONES*/
 
-@import './Utilidades/body';
-@import './Utilidades/header';
-@import './Secciones/main-index';
-@import './Secciones/Contacto/main-Contacto';
-@import './Utilidades/footer';
+@import './Utilities/body';
+@import './Utilities/header';
+@import './Sections/main-index';
+@import './Sections/Contacto/main-Contacto';
+@import './Utilities/footer';
 
 .tit-formulario{
     padding: 1rem;

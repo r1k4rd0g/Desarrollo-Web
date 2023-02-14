@@ -2,7 +2,6 @@
 /*RECURSOS*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
 * {
-  /*Reseteo*/
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -61,7 +60,6 @@
 .lista-menu li a {
   position: relative;
   font-size: 2rem;
-  font-family: "Source Serif Pro", serif;
   text-decoration: none;
   line-height: 2rem;
   letter-spacing: 3px;
@@ -101,19 +99,10 @@
   justify-content: center;
   align-items: center;
   color: #E5383B;
-  font-family: "Source Serif Pro", serif;
   font-size: 6rem;
+  font-weight: bold;
   background-color: #D3D3D3;
   min-height: 15vh; }
-
-.main__ritmos {
-  border: 2px black;
-  /*display: flex;*/
-  justify-content: center;
-  width: 300px;
-  height: 100px;
-  background-size: 100%;
-  background-repeat: no-repeat; }
 
 .ritmos {
   display: grid;
@@ -121,6 +110,12 @@
   justify-items: center;
   align-content: center;
   min-height: 40vh;
+  border: 2px black;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   /*width: 100%;*/
   /*grid-template-rows: 1fr;*/
   /*gap: 1rem;*/
