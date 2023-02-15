@@ -1,10 +1,12 @@
-@charset "UTF-8";
 /*RECURSOS*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;0,700;1,900&display=swap");
+@use "typo";
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "typo.$typoprincipal"; }
 
 /*Colores a usar en la web*/
 /*~ Rich Black FOGRA 39*/
@@ -81,8 +83,14 @@
   width: 100%;
   filter: drop-shadow(0 0 25px var(--clr)); }
 
+.fondo_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; }
+
 .img-logo {
-  margin: auto;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -91,7 +99,6 @@
 
 /*contenido principal con mobile last*/
 .main-index {
-  background-color: #B1A7A6;
   min-height: 60vh; }
 
 .Clases-Principales {
@@ -104,23 +111,32 @@
   background-color: #D3D3D3;
   min-height: 15vh; }
 
+.main__ritmos {
+  border: 2px black;
+  /*display: flex;*/
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: none; }
+
 .ritmos {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   justify-items: center;
   align-content: center;
   min-height: 40vh;
-  border: 2px black;
-  justify-content: center;
-  width: 300px;
-  height: 100px;
-  background-size: 100%;
-  background-repeat: no-repeat;
   /*width: 100%;*/
   /*grid-template-rows: 1fr;*/
   /*gap: 1rem;*/
   /*grid-auto-flow: row;*/
   grid-template-areas: "Salsa Bachata Reggaeton"; }
+
+.ritmoflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .img-baile {
   border-radius: 15%;
@@ -129,26 +145,8 @@
 .tit-ritmo {
   font-size: 2.5rem;
   text-align: center;
-  color: #335C67; }
-
-.footer {
-  background: white;
-  background: linear-gradient(35deg, white 20%, #b1a7a6 40%, lightgray 60%, #f5f3f4 80%, #e5383b 100%);
-  display: flex;
-  height: 15vh; }
-
-.footer__Redes li {
-  color: #370617;
-  border: 3px solid;
-  display: inline-block;
-  padding: 3px;
-  position: relative;
-  list-style: none;
-  font-size: 25px; }
-
-.footer__Redes a {
-  color: #9D0208;
-  text-decoration: none; }
+  color: #335C67;
+  font-weight: bold; }
 
 .tit-formulario {
   padding: 1rem;
@@ -172,7 +170,6 @@
 .box-datos textarea {
   background-color: #F5EBE0; }
 
-/*cambios en sección Contacto*/
 .grid-contacto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -211,6 +208,27 @@
     transform: translatey(25px); }
   100% {
     transform: translatey(0px); } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
+    rgba(186,24,27,1) 80%);*/
+  min-height: 15vh; }
+
+.footer__Redes li {
+  color: #370617;
+  border: 3px solid;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  list-style: none;
+  font-size: 25px; }
+
+.footer__Redes a {
+  color: #9D0208;
+  text-decoration: none; }
 
 /* cambios para adaptar a 8408px y menos*/
 @media (max-width: 840px) {

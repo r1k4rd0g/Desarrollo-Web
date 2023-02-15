@@ -1,9 +1,11 @@
 .footer{
-    background: rgb(255,255,255);
-    background: linear-gradient(35deg, rgba(255,255,255,1) 20%, rgba(177,167,166,1) 40%, 
-            rgba(211,211,211,1) 60%, rgba(245,243,244,1) 80%, rgba(229,56,59,1) 100%);
     display: flex;
-    height: 15vh;
+    flex-direction: column;
+    align-items: center;
+    
+    /*background: linear-gradient (35 deg rgba(211,211,211,1) 10%, rgba(177,167,166,1) 20%, rgba(229,56,59,1) 60%,
+    rgba(186,24,27,1) 80%);*/
+    min-height: 15vh;
 }
 .footer__Redes li{
     color: #370617; 
